@@ -1,0 +1,24 @@
+{
+  "name": "gitbook-plugin-lotadata-header",
+  "description": "LotaData header plugin for gitbook",
+  "main": "index.js",
+  "version": "0.0.1",
+  "engines": {
+    "gitbook": ">=2.5.1"
+  },
+  "homepage": "https://github.com/lotadata/gitbook-plugin-lotadata-header",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lotadata/gitbook-plugin-lotadata-header"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lotadata/gitbook-plugin-lotadata-header/issues"
+  },
+  "gitbook": {
+    "properties": {}
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  }
+}
