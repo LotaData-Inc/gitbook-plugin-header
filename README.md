@@ -1,4 +1,4 @@
-# gitbook-plugin-top-nav
+# gitbook-plugin-lotadata-header
 Plugin for gitbook to add custom top navigation bar.
 
-![Screenshot](top-nav-screenshot.png)
+![Screenshot](lotadata-header.png)
