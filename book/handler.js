@@ -1,73 +1,26 @@
-const topHeaderSetup = `
-  <style>
-    #menu_items {
-      padding: 0; 
-      margin: 0;
-    }
-    #menu_items > li{
-      display: inline-block;
-    }
-    #menu_items > li a:hover{
-      color: #fff;
-    }
-    .has_dropdown {
-      position: relative;
-    }
-    .has_dropdown {
-      position: relative;
-    }
-    .has_dropdown:hover .dropdown {
-      visibility: visible;
-      opacity: 1;
-    }
-    .dropdown{
-        position: absolute;
-        left: 0;
-        width: 100%;
-        visibility: hidden;
-        background: #05022c;
-        opacity: 0;
-        text-align: center;
-        padding: 0;
-    }
-    .dropdown li{
-      display: block;
-    }
-    .dropdown li a{
-      display: block;
-        padding: 8px 0;
-        font-family: 'Lato', sans-serif;
-        color: #a6b5bf;
-        font-size: 12px;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-  </style>
-  <div class="top-nav-header w-nav" data-animation="default" data-collapse="medium" data-doc-height="1" data-duration="200" data-no-scroll="1">
-    <div class="w-container">
-      <a class="brand w-nav-brand w--current" href="https://www.lotadata.com" target="_blank">
-        <img class="top-nav-logo" src="https://lotadata.com/src/images/_samples/logo_light/horizontal_darkBG.png" width="140"> 
-      </a>
-      <nav class="navmenu w-nav-menu" role="navigation">
-        <ul id="menu_items">
-          <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com" target="_blank" style="max-width: 940px;">home</a></li>
-          <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" style="max-width: 940px;" target="_blank">insights</a>
-            <ul class="dropdown">
-              <li><a href="https://www.lotadata.com/insights#for_marketers">For Marketers</a></li>
-              <li><a href="https://www.lotadata.com/insights#for_developers">For Developers</a></li>
-              <li><a href="https://www.lotadata.com/insights#for_government">For Government</a></li>
-            </ul>
-          </li>
-          <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/blog" target="_blank" style="max-width: 940px;">blog</a></li>
-          <li><a class="top-nav-navlink w-nav-link" href="https://www.lotadata.com" style="max-width: 940px;" target="_blank">support</a></li>
-          <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/docs" target="_blank" style="max-width: 940px;">docs</a></li>
-          <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/about_us" style="max-width: 940px;" target="_blank">company</a></li>
-        </ul>
-      </nav> 
-    </div>
+const topHeaderSetup = ` <div class="top-nav-header w-nav" data-animation="default" data-collapse="medium" data-doc-height="1" data-duration="200" data-no-scroll="1">
+  <div class="w-container">
+    <a class="brand w-nav-brand w--current" href="https://www.lotadata.com" target="_blank">
+      <img class="top-nav-logo" src="https://lotadata.com/src/images/_samples/logo_light/horizontal_darkBG.png" width="140"> 
+    </a>
+    <nav class="navmenu w-nav-menu" role="navigation">
+      <ul id="menu_items">
+        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com" target="_blank" style="max-width: 940px;">home</a></li>
+        <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" style="max-width: 940px;" target="_blank">insights</a>
+          <ul class="dropdown">
+            <li><a href="https://www.lotadata.com/insights#for_marketers">For Marketers</a></li>
+            <li><a href="https://www.lotadata.com/insights#for_developers">For Developers</a></li>
+            <li><a href="https://www.lotadata.com/insights#for_government">For Government</a></li>
+          </ul>
+        </li>
+        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/blog" target="_blank" style="max-width: 940px;">blog</a></li>
+        <li><a class="top-nav-navlink w-nav-link" href="https://www.lotadata.com" style="max-width: 940px;" target="_blank">support</a></li>
+        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/docs" target="_blank" style="max-width: 940px;">docs</a></li>
+        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/about_us" style="max-width: 940px;" target="_blank">company</a></li>
+      </ul>
+    </nav> 
   </div>
-`;
+</div>`;
 
 require(["gitbook", "jQuery"], function(gitbook, $) {
 
