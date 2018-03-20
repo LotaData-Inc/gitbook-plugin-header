@@ -1,22 +1,29 @@
 const topHeaderSetup = ` <div class="top-nav-header w-nav" data-animation="default" data-collapse="medium" data-doc-height="1" data-duration="200" data-no-scroll="1">
   <div class="w-container">
     <a class="brand w-nav-brand w--current" href="https://www.lotadata.com" target="_blank">
-      <img class="top-nav-logo" src="https://lotadata.com/src/images/_samples/logo_light/horizontal_darkBG.png" width="140"> 
+      <img class="top-nav-logo" src="https://lotadata.com/src/images/_samples/logo_light/horizontal_darkBG.png" width="180"> 
     </a>
+    <button class="signup">Sign in</button>
     <nav class="navmenu w-nav-menu" role="navigation">
       <ul id="menu_items">
         <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com" target="_blank" style="max-width: 940px;">home</a></li>
-        <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" style="max-width: 940px;" target="_blank">insights</a>
+        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/docs" target="_blank" style="max-width: 940px;">docs</a></li>
+        <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" style="max-width: 940px;" target="_blank">insights for</a>
           <ul class="dropdown">
-            <li><a href="https://www.lotadata.com/insights#for_marketers">For Marketers</a></li>
-            <li><a href="https://www.lotadata.com/insights#for_developers">For Developers</a></li>
-            <li><a href="https://www.lotadata.com/insights#for_government">For Government</a></li>
+            <li><a href="https://geox.lotadata.com" target="_blank">Marketers</a></li>
+            <li><a href="https://geodash.lotadata.com" target="_blank">Developers</a></li>
+            <li><a href="https://citydash.lotadata.com" target="_blank">Government</a></li>
+          </ul>
+        </li>
+        <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" style="max-width: 940px;" target="_blank">company</a>
+          <ul class="dropdown">
+            <li><a href="https://lotadata.com/about_us" target="_blank">about</a></li>
+            <li><a href="https://lotadata.com/privacy_policy" target="_blank">privacy policy</a></li>
+            <li><a href="https://lotadata.com/terms_of_service" target="_blank">terms of service</a></li>
           </ul>
         </li>
         <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/blog" target="_blank" style="max-width: 940px;">blog</a></li>
-        <li><a class="top-nav-navlink w-nav-link" href="https://www.lotadata.com" style="max-width: 940px;" target="_blank">support</a></li>
-        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/docs" target="_blank" style="max-width: 940px;">docs</a></li>
-        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/about_us" style="max-width: 940px;" target="_blank">company</a></li>
+        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/careers" style="max-width: 940px;" target="_blank">careers</a></li>
       </ul>
     </nav> 
   </div>
