@@ -6,7 +6,6 @@ const topHeaderSetup = ` <div class="top-nav-header w-nav" data-animation="defau
     <button class="signup">Sign in</button>
     <nav class="navmenu w-nav-menu" role="navigation">
       <ul id="menu_items">
-        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com" target="_blank" style="max-width: 940px;">home</a></li>
         <li><a class="top-nav-navlink w-nav-link" href="https://docs.lotadata.com" target="_blank" style="max-width: 940px;">docs</a></li>
         <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" target="_blank" style="max-width: 940px;">analytics</a>
           <ul class="dropdown">
@@ -20,14 +19,14 @@ const topHeaderSetup = ` <div class="top-nav-header w-nav" data-animation="defau
           </ul>
         </li>
         <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" style="max-width: 940px;" target="_blank">company</a>
-          <ul class="dropdown">
+          <ul class="dropdown" style="width: 160%;">
             <li><a href="https://lotadata.com/about_us" target="_blank">about</a></li>
+            <li><a href="https://lotadata.com/blog" target="_blank" style="max-width: 940px;">blog</a></li>
+            <li><a href="https://lotadata.com/careers" style="max-width: 940px;" target="_blank">careers</a></li>
             <li><a href="https://lotadata.com/privacy_policy" target="_blank">privacy policy</a></li>
             <li><a href="https://lotadata.com/terms_of_service" target="_blank">terms of service</a></li>
           </ul>
         </li>
-        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/blog" target="_blank" style="max-width: 940px;">blog</a></li>
-        <li><a class="top-nav-navlink w-nav-link" href="https://lotadata.com/careers" style="max-width: 940px;" target="_blank">careers</a></li>
       </ul>
     </nav> 
   </div>
