@@ -118,12 +118,12 @@
 .dropdown{
     position: absolute;
     left: 0;
-    width: 200px;
+    width: 100%;
     visibility: hidden;
     background: #05022c;
     opacity: 0;
     text-align: center;
-    padding: 0 0 10px 0;
+    padding: 0 0 10px 19px;
 }
 .dropdown li{
   display: block;
@@ -156,4 +156,13 @@
     float: right;
     margin-left: 200px;
     margin: 12px 25px 0 60px;
+}
+
+@media (max-width: 768px){
+    .navmenu.w-nav-menu {
+        display: none;
+    }
+    .w-nav-brand, .w-nav-brand + button {
+        transform: translateY(-3px);
+    }
 }
