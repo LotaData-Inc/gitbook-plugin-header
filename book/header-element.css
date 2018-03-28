@@ -158,7 +158,7 @@
     margin: 12px 25px 0 60px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1166px){
     .navmenu.w-nav-menu {
         display: none;
     }
