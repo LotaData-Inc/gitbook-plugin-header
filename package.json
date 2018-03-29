@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-lotadata-header",
   "description": "LotaData header plugin for gitbook",
   "main": "index.js",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "engines": {
     "gitbook": ">=2.5.1"
   },
