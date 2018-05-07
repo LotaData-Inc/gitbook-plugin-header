@@ -3,7 +3,7 @@ const topHeaderSetup = ` <div class="top-nav-header w-nav" data-animation="defau
     <a class="brand w-nav-brand w--current" href="https://www.lotadata.com" target="_blank">
       <img class="top-nav-logo" src="https://lotadata.com/src/images/_samples/logo_light/horizontal_darkBG.png" width="180"> 
     </a>
-    <button class="signup">Sign in</button>
+    <a href="https://auth.lotadata.com/signin.html?origin=http://docs.lotadata.com" class="signup">Sign in</a>
     <nav class="navmenu w-nav-menu" role="navigation">
       <ul id="menu_items">
         <li><a class="top-nav-navlink w-nav-link" href="https://docs.lotadata.com" style="max-width: 940px;">docs</a></li>
