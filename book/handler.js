@@ -7,15 +7,15 @@ const topHeaderSetup = ` <div class="top-nav-header w-nav" data-animation="defau
     <nav class="navmenu w-nav-menu" role="navigation">
       <ul id="menu_items">
         <li><a class="top-nav-navlink w-nav-link" href="https://docs.lotadata.com" style="max-width: 940px;">docs</a></li>
+        <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" style="max-width: 940px;" target="_blank">insights</a>
+          <ul class="dropdown">
+            <li><a href="https://lotadata.com/#insights" target="_blank">GeoX</a></li>
+          </ul>
+        </li>
         <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" target="_blank" style="max-width: 940px;">analytics</a>
           <ul class="dropdown">
             <li><a href="https://lotadata.com/#visualExplorer" target="_blank">GeoDash</a></li>
             <li><a href="https://lotadata.com/#momentsSdk" target="_blank">CityDash</a></li>
-          </ul>
-        </li>
-        <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" style="max-width: 940px;" target="_blank">insights</a>
-          <ul class="dropdown">
-            <li><a href="https://lotadata.com/#insights" target="_blank">GeoX</a></li>
           </ul>
         </li>
         <li class="has_dropdown"><a class="top-nav-navlink w-nav-link" href="#" style="max-width: 940px;" target="_blank">company</a>
