@@ -17,13 +17,14 @@ We are eager to hear from you and happy to share best practices for integrating 
 
 But first, please [sign up for an account with LotaData](http://platform.lotadata.com/?signup=true) so that we may send you the link to download our SDK.
 
-
-#Installation
-
+## Installation
 Add the plugin to your book.json
 
+```json
 {
     "plugins": ["lotadata-header"]
 }
+```
+
 ---
 
