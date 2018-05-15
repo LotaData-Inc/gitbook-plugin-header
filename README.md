@@ -4,8 +4,6 @@ This plugin for GitBook adds a custom header with top navigation options to the 
 
 ![Screenshot](lotadata-header.png)
 
-![Alt Text](https://www.gitbook.com/@lotadata/avatar)
-
 ---
 
 #### Questions?
