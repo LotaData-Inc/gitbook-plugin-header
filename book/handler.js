@@ -32,6 +32,63 @@ const topHeaderSetup = ` <div class="top-nav-header w-nav" data-animation="defau
   </div>
 </div>`;
 
+const adrollScriptTrack = `
+  <script type="text/javascript">
+      adroll_adv_id = "33RN5EGX5RHFNBW27CA5GF";
+      adroll_pix_id = "PWRUHUNWGBFGDE5T5PUTXI";
+      /* OPTIONAL: provide email to improve user identification */
+      /* adroll_email = "username@example.com"; */
+      (function () {
+          var _onload = function(){
+              if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+              if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+              var scr = document.createElement("script");
+              var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+              scr.setAttribute('async', 'true');
+              scr.type = "text/javascript";
+              scr.src = host + "/j/roundtrip.js";
+              ((document.getElementsByTagName('head') || [null])[0] ||
+                  document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+          };
+          if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+          else {window.attachEvent('onload', _onload)}
+      }());
+  </script>
+`;
+
+const linkedinScriptTrack = `
+  <script type="text/javascript">
+          _linkedin_data_partner_id = "328324";
+          </script><script type="text/javascript">
+          (function(){var s = document.getElementsByTagName("script")[0];
+          var b = document.createElement("script");
+          b.type = "text/javascript";b.async = true;
+          b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+          s.parentNode.insertBefore(b, s);})();
+  </script>
+  <noscript>
+          <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=328324&fmt=gif" />
+  </noscript>
+`;
+
+const facebookScriptTrack = `
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '233159014169154'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=233159014169154&ev=PageView&noscript=1"/>
+  </noscript>
+`;
+
 require(["gitbook", "jQuery"], function(gitbook, $) {
 
     gitbook.events.bind("start", function(e, config) {
@@ -42,6 +99,10 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       function createHeader() {
         // return '<div class="top-nav-header w-nav" data-animation="default" data-collapse="medium" data-doc-height="1" data-duration="200" data-no-scroll="1"> <div class="w-container"> <a class="brand w-nav-brand w--current" href="https://www.lotadata.com" target="_blank"> <img class="top-nav-logo" src="https://lotadata.com/src/images/_samples/logo_light/horizontal_darkBG.png" width="140"> </a> <nav class="navmenu w-nav-menu" role="navigation"> <a class="top-nav-navlink w-nav-link" href="https://lotadata.com" target="_blank" style="max-width: 940px;">home</a> <a class="top-nav-navlink w-nav-link" href="https://www.lotadata.com/insights" style="max-width: 940px;" target="_blank">insights</a> <a class="top-nav-navlink w-nav-link" href="https://lotadata.com/blog" target="_blank" style="max-width: 940px;">blog</a> <a class="top-nav-navlink w-nav-link" href="https://www.lotadata.com" style="max-width: 940px;" target="_blank">support</a> <a class="top-nav-navlink w-nav-link" href="https://lotadata.com/docs" target="_blank" style="max-width: 940px;">docs</a> <a class="top-nav-navlink w-nav-link" href="https://lotadata.com/about_us" style="max-width: 940px;" target="_blank">company</a> </nav> </div> </div>';
         return topHeaderSetup;
+      }
+
+      function adsScripts() {
+        return [adrollScriptTrack,linkedinScriptTrack,facebookScriptTrack].join('');
       }
       // Get configuration.
       var headerTitle = 'NEW HEADER';
@@ -56,6 +117,8 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       var $link = $(createHeader());
       $headerWrapper.append($link);
       //var $headerTitle = $('<div class="header-text">' + headerTitle + '</div>');
+
+      $(document.getElementsByTagName('head')[0]).append(adsScripts());
 
       //$headerWrapper.append($headerTitle);
       $header.append($headerWrapper);
