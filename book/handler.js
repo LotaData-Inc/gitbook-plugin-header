@@ -102,8 +102,6 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       }
 
       function adsScripts() {
-        const head = document.getElementsByTagName('head')[0];
-
         return [adrollScriptTrack,linkedinScriptTrack,facebookScriptTrack].join('');
       }
       // Get configuration.
@@ -120,7 +118,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       $headerWrapper.append($link);
       //var $headerTitle = $('<div class="header-text">' + headerTitle + '</div>');
 
-      $(head).append(adsScripts());
+      $(document.getElementsByTagName('head')[0]).append(adsScripts());
 
       //$headerWrapper.append($headerTitle);
       $header.append($headerWrapper);
