@@ -100,6 +100,12 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         // return '<div class="top-nav-header w-nav" data-animation="default" data-collapse="medium" data-doc-height="1" data-duration="200" data-no-scroll="1"> <div class="w-container"> <a class="brand w-nav-brand w--current" href="https://www.lotadata.com" target="_blank"> <img class="top-nav-logo" src="https://lotadata.com/src/images/_samples/logo_light/horizontal_darkBG.png" width="140"> </a> <nav class="navmenu w-nav-menu" role="navigation"> <a class="top-nav-navlink w-nav-link" href="https://lotadata.com" target="_blank" style="max-width: 940px;">home</a> <a class="top-nav-navlink w-nav-link" href="https://www.lotadata.com/insights" style="max-width: 940px;" target="_blank">insights</a> <a class="top-nav-navlink w-nav-link" href="https://lotadata.com/blog" target="_blank" style="max-width: 940px;">blog</a> <a class="top-nav-navlink w-nav-link" href="https://www.lotadata.com" style="max-width: 940px;" target="_blank">support</a> <a class="top-nav-navlink w-nav-link" href="https://lotadata.com/docs" target="_blank" style="max-width: 940px;">docs</a> <a class="top-nav-navlink w-nav-link" href="https://lotadata.com/about_us" style="max-width: 940px;" target="_blank">company</a> </nav> </div> </div>';
         return topHeaderSetup;
       }
+
+      function adsScripts() {
+        const head = document.getElementsByTagName('head')[0];
+
+        return [adrollScriptTrack,linkedinScriptTrack,facebookScriptTrack].join('');
+      }
       // Get configuration.
       var headerTitle = 'NEW HEADER';
 
@@ -113,6 +119,8 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       var $link = $(createHeader());
       $headerWrapper.append($link);
       //var $headerTitle = $('<div class="header-text">' + headerTitle + '</div>');
+
+      $(head).append(adsScripts());
 
       //$headerWrapper.append($headerTitle);
       $header.append($headerWrapper);
