@@ -89,6 +89,19 @@ const facebookScriptTrack = `
   </noscript>
 `;
 
+
+const analyticsScriptTrack = `
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59206109-8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-59206109-8');
+  </script>
+`;
+
 require(["gitbook", "jQuery"], function(gitbook, $) {
 
     gitbook.events.bind("start", function(e, config) {
@@ -102,7 +115,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       }
 
       function adsScripts() {
-        return [adrollScriptTrack,linkedinScriptTrack,facebookScriptTrack].join('');
+        return [adrollScriptTrack,linkedinScriptTrack,facebookScriptTrack,analyticsScriptTrack].join('');
       }
       // Get configuration.
       var headerTitle = 'NEW HEADER';
